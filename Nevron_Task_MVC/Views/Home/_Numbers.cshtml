@@ -1,0 +1,20 @@
+﻿@inject IHttpContextAccessor Accessor
+
+@{
+    var numbers = System.Text.Json.JsonSerializer.Deserialize<List<int>>(Accessor.HttpContext?.Session.GetString("numbers") ?? "[]");
+    var sum = Accessor.HttpContext?.Session.GetInt32("sum") ?? 0;
+
+    foreach (var item in numbers)
+    {
+        <div class="number mr-2 mt-1 d-inline-block">@item</div>
+    }
+
+    <p>
+        <div class="d-block">
+            <b>Count: </b>@numbers.Count
+        </div>
+        <div class="d-block">
+            <b>Sum: </b>@sum
+        </div>
+    </p>
+}

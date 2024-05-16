@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <h1 class="display-4">Header</h1>
+    <h2>Subheader</h2>
+    
+    <form class="d-inline" data-ajax="true" data-ajax-method="get" data-ajax-update="#numbers" data-ajax-mode='replace' data-ajax-url="@Url.Action("ClearNumbers","Home")">
+        <button class="btn btn-light action-btn" type="submit">Clear Numbers</button>
+    </form>
+    
+    <form class="d-inline" data-ajax="true" data-ajax-method="get" data-ajax-update="#numbers" data-ajax-mode='replace' data-ajax-url="@Url.Action("AddNumber","Home")">
+        <button class="btn btn-light action-btn" type="submit">Add Number</button>
+    </form>
+
+    <form class="d-inline" data-ajax="true" data-ajax-method="get" data-ajax-update="#numbers" data-ajax-mode='replace' data-ajax-url="@Url.Action("SumNumbers","Home")">
+        <button class="btn btn-light action-btn" type="submit">Sum Numbers</button>
+    </form>
+
+    <div id="numbers" class="mt-4">
+        <partial name="_Numbers" />
+    </div>
+</div>

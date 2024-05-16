@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nevron_Task_MVC", "Nevron_Task_MVC\Nevron_Task_MVC.csproj", "{D1991C78-5D67-4240-AE7D-FA06F0C6AF93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1991C78-5D67-4240-AE7D-FA06F0C6AF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1991C78-5D67-4240-AE7D-FA06F0C6AF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1991C78-5D67-4240-AE7D-FA06F0C6AF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1991C78-5D67-4240-AE7D-FA06F0C6AF93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66F2A4D0-730C-4FD9-9506-6053352CA976}
+	EndGlobalSection
+EndGlobal
